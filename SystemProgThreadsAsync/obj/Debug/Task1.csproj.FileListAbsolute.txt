@@ -1,0 +1,15 @@
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\bin\Debug\SystemProgThreadsAsync.exe.config
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\bin\Debug\SystemProgThreadsAsync.exe
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\bin\Debug\SystemProgThreadsAsync.pdb
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\obj\Debug\Task1.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\obj\Debug\App.g.cs
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\obj\Debug\SystemProgThreadsAsync_MarkupCompile.cache
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\obj\Debug\SystemProgThreadsAsync_MarkupCompile.lref
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\obj\Debug\MainWindow.baml
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\obj\Debug\SystemProgThreadsAsync.g.resources
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\obj\Debug\SystemProgThreadsAsync.Properties.Resources.resources
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\obj\Debug\Task1.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\obj\Debug\Task1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\obj\Debug\SystemProgThreadsAsync.exe
+C:\Users\Admin\source\repos\SystemProgThreadsAsync\SystemProgThreadsAsync\obj\Debug\SystemProgThreadsAsync.pdb

@@ -1,0 +1,64 @@
+﻿<Window x:Class="Task45.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task45"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.4*"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"></RowDefinition>
+            <RowDefinition Height="0.4*"></RowDefinition>
+            <RowDefinition Height="0.4*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+
+
+        </Grid.RowDefinitions>
+        <DockPanel LastChildFill="False">
+            <Label Content="From:" DockPanel.Dock="Left" FontSize="15" Margin="5,0" VerticalAlignment="Center" />
+            <TextBox Height="30" DockPanel.Dock="Left" VerticalAlignment="Center"  TextWrapping="Wrap" Text="{Binding CopyInfo.SourceFolder}"  Width="300"/>
+            <Button x:Name="fromButton" Grid.Column="1" Content="Open Folder"  Width="75"  HorizontalAlignment="Left"  Margin="10,5" Command="{Binding FromCommand}"/>
+        </DockPanel>
+        <DockPanel LastChildFill="False" Grid.Row="1">
+            <Label Content="To:" DockPanel.Dock="Left" FontSize="15" VerticalAlignment="Center" Margin="5,0,25,0"/>
+            <TextBox Height="30" DockPanel.Dock="Left" VerticalAlignment="Center"  TextWrapping="Wrap" Width="300" Text="{Binding CopyInfo.DestFolder}"/>
+
+            <Button Name="toFolderButton" Grid.Column="1" Grid.Row="1" Content="Open Folder" HorizontalAlignment="Left" Margin="10,5" Width="75" Command="{Binding ToCommand}"/>
+        </DockPanel>
+
+        <ListBox Grid.Row="2" Grid.RowSpan="4" Name="threadsListBox" HorizontalContentAlignment="Stretch" Margin="5,0" ItemsSource="{Binding Threads}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel Margin="5">
+                        <TextBlock TextWrapping="Wrap" FontWeight="Bold" Text="{Binding SourceFolder}"></TextBlock>
+                        <Label>copy to</Label>
+                        <Label FontWeight="Bold" Content="{Binding DestFolder}"></Label>
+                        <TextBlock DockPanel.Dock="Right">
+                            <Run Text="{Binding Progress}"/>
+                            <Run>%</Run>
+                        </TextBlock>
+                        <ProgressBar Width="100" Margin="5" Value="{Binding Progress}"></ProgressBar>
+                    </DockPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <DockPanel LastChildFill="False" Grid.Column="1" >
+            <TextBlock Height="30" VerticalAlignment="Center" FontSize="15">Count threads:</TextBlock>
+            <TextBox Width="70" Height="30" Margin="15,0" FontSize="15" Text="{Binding CountThreads}"></TextBox>
+        </DockPanel>
+        <DockPanel LastChildFill="False"  Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" >
+            <Button  DockPanel.Dock="Top" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Width="75" Margin="0,10" Height="35" Background="#FF4BAA69" Command="{Binding StartCommand}"/>
+            <Button DockPanel.Dock="Top"  Content="Stop"  HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Width="75" Height="35" Margin="0,10" Background="#FFC46E53" Command="{Binding StopCommand}"/>
+            <Button DockPanel.Dock="Top" Content="Pause" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Width="75" Height="35" Margin="0,10" Background="#FFC8B75D" Command="{Binding PauseCommand}"/>
+        </DockPanel>
+    </Grid>
+</Window>
